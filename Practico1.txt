@@ -1,0 +1,117 @@
+(base) arielmeragelman@debian:~/Entornos$ mkdir Unidad1
+(base) arielmeragelman@debian:~/Entornos$ python -m pip install virtualenv
+Requirement already satisfied: virtualenv in /home/arielmeragelman/anaconda3/lib/python3.9/site-packages (20.16.5)
+Requirement already satisfied: platformdirs<3,>=2.4 in /home/arielmeragelman/anaconda3/lib/python3.9/site-packages (from virtualenv) (2.5.2)
+Requirement already satisfied: distlib<1,>=0.3.5 in /home/arielmeragelman/anaconda3/lib/python3.9/site-packages (from virtualenv) (0.3.6)
+Requirement already satisfied: filelock<4,>=3.4.1 in /home/arielmeragelman/anaconda3/lib/python3.9/site-packages (from virtualenv) (3.6.0)
+
+(base) arielmeragelman@debian:~/Entornos$ cd Unidad1
+(base) arielmeragelman@debian:~/Entornos/Unidad1$ python -m venv ambiente1
+(base) arielmeragelman@debian:~/Entornos/Unidad1$ python -m venv ambiente2
+(base) arielmeragelman@debian:~/Entornos/Unidad1$ cd ambiente1
+(base) arielmeragelman@debian:~/Entornos/Unidad1/ambiente1$ source bin/activate
+(ambiente1) (base) arielmeragelman@debian:~/Entornos/Unidad1/ambiente1$ python -m pip install pandas matplotlib
+Collecting pandas
+  Downloading pandas-1.5.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 614.0 kB/s eta 0:00:00
+Collecting matplotlib
+  Downloading matplotlib-3.6.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.8/11.8 MB 645.8 kB/s eta 0:00:00
+Collecting python-dateutil>=2.8.1
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting numpy>=1.20.3
+  Using cached numpy-1.23.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+Collecting pytz>=2020.1
+  Downloading pytz-2022.6-py2.py3-none-any.whl (498 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 498.1/498.1 KB 698.2 kB/s eta 0:00:00
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.38.0-py3-none-any.whl (965 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 965.4/965.4 KB 602.9 kB/s eta 0:00:00
+Collecting kiwisolver>=1.0.1
+  Using cached kiwisolver-1.4.4-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+Collecting cycler>=0.10
+  Using cached cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting contourpy>=1.0.1
+  Downloading contourpy-1.0.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (296 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 296.3/296.3 KB 740.5 kB/s eta 0:00:00
+Collecting pyparsing>=2.2.1
+  Using cached pyparsing-3.0.9-py3-none-any.whl (98 kB)
+Collecting pillow>=6.2.0
+  Downloading Pillow-9.3.0-cp39-cp39-manylinux_2_28_x86_64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 575.0 kB/s eta 0:00:00
+Collecting packaging>=20.0
+  Using cached packaging-21.3-py3-none-any.whl (40 kB)
+Collecting six>=1.5
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, six, pyparsing, pillow, numpy, kiwisolver, fonttools, cycler, python-dateutil, packaging, contourpy, pandas, matplotlib
+Successfully installed contourpy-1.0.6 cycler-0.11.0 fonttools-4.38.0 kiwisolver-1.4.4 matplotlib-3.6.2 numpy-1.23.4 packaging-21.3 pandas-1.5.1 pillow-9.3.0 pyparsing-3.0.9 python-dateutil-2.8.2 pytz-2022.6 six-1.16.0
+WARNING: You are using pip version 22.0.4; however, version 22.3.1 is available.
+You should consider upgrading via the '/home/arielmeragelman/Entornos/Unidad1/ambiente1/bin/python -m pip install --upgrade pip' command.
+(ambiente1) (base) arielmeragelman@debian:~/Entornos/Unidad1/ambiente1$ python -m pip freeze
+contourpy==1.0.6
+cycler==0.11.0
+fonttools==4.38.0
+kiwisolver==1.4.4
+matplotlib==3.6.2
+numpy==1.23.4
+packaging==21.3
+pandas==1.5.1
+Pillow==9.3.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+pytz==2022.6
+six==1.16.0
+(ambiente1) (base) arielmeragelman@debian:~/Entornos/Unidad1/ambiente1$ deactivate
+(base) arielmeragelman@debian:~/Entornos/Unidad1/ambiente1$ cd ..
+(base) arielmeragelman@debian:~/Entornos/Unidad1$ cd ambiente2
+(base) arielmeragelman@debian:~/Entornos/Unidad1/ambiente2$ source bin/activate
+(ambiente2) (base) arielmeragelman@debian:~/Entornos/Unidad1/ambiente2$ python -m pip install pandas==1.5 matplotlib==3.6.1
+Collecting pandas==1.5
+  Using cached pandas-1.5.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+Collecting matplotlib==3.6.1
+  Using cached matplotlib-3.6.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.8 MB)
+Collecting numpy>=1.20.3
+  Using cached numpy-1.23.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+Collecting pytz>=2020.1
+  Using cached pytz-2022.6-py2.py3-none-any.whl (498 kB)
+Collecting python-dateutil>=2.8.1
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting packaging>=20.0
+  Using cached packaging-21.3-py3-none-any.whl (40 kB)
+Collecting pillow>=6.2.0
+  Using cached Pillow-9.3.0-cp39-cp39-manylinux_2_28_x86_64.whl (3.3 MB)
+Collecting fonttools>=4.22.0
+  Using cached fonttools-4.38.0-py3-none-any.whl (965 kB)
+Collecting contourpy>=1.0.1
+  Using cached contourpy-1.0.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (296 kB)
+Collecting pyparsing>=2.2.1
+  Using cached pyparsing-3.0.9-py3-none-any.whl (98 kB)
+Collecting cycler>=0.10
+  Using cached cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting kiwisolver>=1.0.1
+  Using cached kiwisolver-1.4.4-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+Collecting six>=1.5
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, six, pyparsing, pillow, numpy, kiwisolver, fonttools, cycler, python-dateutil, packaging, contourpy, pandas, matplotlib
+Successfully installed contourpy-1.0.6 cycler-0.11.0 fonttools-4.38.0 kiwisolver-1.4.4 matplotlib-3.6.1 numpy-1.23.4 packaging-21.3 pandas-1.5.0 pillow-9.3.0 pyparsing-3.0.9 python-dateutil-2.8.2 pytz-2022.6 six-1.16.0
+WARNING: You are using pip version 22.0.4; however, version 22.3.1 is available.
+You should consider upgrading via the '/home/arielmeragelman/Entornos/Unidad1/ambiente2/bin/python -m pip install --upgrade pip' command.
+(ambiente2) (base) arielmeragelman@debian:~/Entornos/Unidad1/ambiente2$ python -m pip freeze
+contourpy==1.0.6
+cycler==0.11.0
+fonttools==4.38.0
+kiwisolver==1.4.4
+matplotlib==3.6.1
+numpy==1.23.4
+packaging==21.3
+pandas==1.5.0
+Pillow==9.3.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+pytz==2022.6
+six==1.16.0
+(ambiente2) (base) arielmeragelman@debian:~/Entornos/Unidad1/ambiente2$ 
+
+
+
+
